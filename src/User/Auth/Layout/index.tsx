@@ -1,6 +1,5 @@
 import React from 'react'
-import TopBar from './TopBar'
-import Sidebar from './Sidebar'
+import logo from 'assets/images/logo.png'
 import style from './style.module.scss'
 
 type Props = {
@@ -9,9 +8,8 @@ type Props = {
 
 export default ({children}: Props) =>
   <div className={style.page}>
-    <TopBar />
-    <div className={style.columns}>
-      <Sidebar />
-      <div className={style.content}>{children}</div>
+    <div className={style.wrap}>
+      <img className={style.logo} src={logo} alt="logo"/>
+      {children}
     </div>
   </div>
