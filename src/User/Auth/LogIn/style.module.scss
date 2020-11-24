@@ -2,23 +2,32 @@
 
 .forgot {
   color: $font-gray;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
+  font-size: 16rem;
+  line-height: 19rem;
   text-align: right;
   cursor: pointer;
 }
 
 .buttons {
-  margin-top: 4rem;
+  margin-top: 40rem;
 }
 
 .button {
   & + .button {
-    margin-top: 3rem;
+    margin-top: 30rem;
   }
 }
 
-.create {
-  font-size: 1.8rem;
-  height: 5rem;
+.center {
+  text-align: center;
+}
+
+.textButton {
+  font-size: 18rem;
+  margin-top: 36rem;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
